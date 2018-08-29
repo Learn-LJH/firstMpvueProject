@@ -1,6 +1,6 @@
 <template>
   <div class="container" @click="clickHandle('test click', $event)">
-
+ 
     <div class="userinfo" @click="bindViewTap">
       <img class="userinfo-avatar" v-if="userInfo.avatarUrl" :src="userInfo.avatarUrl" background-size="cover" />
       <div class="userinfo-nickname">
@@ -20,7 +20,8 @@
         </div>
       </div>
     </div>
-
+<button open-type="getUserInfo" @click="getUserInfo">11</button> 
+<button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber"> 22</button> 
     <div class="page" style="margin-top:50px;">
       <!-- <div class="weui-footer">
         <div class="weui-footer__text">Copyright © 2008-2018 weui.io</div>
@@ -68,7 +69,7 @@ export default {
       motto: 'Hello World',
       userInfo: {},
       grids: [
-        { src: '/static/images/icon_nav_button.png', name: 'Button', url: '/pages/resume/main' },
+        { src: '/static/images/person.jpg', name: '个人信息', url: '/pages/resume/main' },
         { src: '/static/images/icon_nav_cell.png', name: 'Cell', url: '/pages/resume/main' },
         { src: '/static/images/icon_nav_toast.png', name: 'Toast', url: '/pages/resume/main' },
         { src: '/static/images/icon_nav_dialog.png', name: 'Dialog', url: '/pages/resume/main' },
@@ -85,23 +86,38 @@ export default {
     card
   },
 
+  getPhoneNumber: function(e) { 
+      console.log(e.detail.errMsg) 
+      console.log(e.detail.iv) 
+      console.log(e.detail.encryptedData) 
+    },
+
   methods: {
     bindViewTap () {
       const url = '../logs/main'
       wx.navigateTo({ url })
     },
+    
     getUserInfo () {
       // 调用登录接口
       wx.login({
         success: () => {
           wx.getUserInfo({
             success: (res) => {
-              this.userInfo = res.userInfo
+              console.info(res.userInfo);
+              this.userInfo = res.userInfo;
             }
           })
         }
       })
     },
+
+    getPhoneNumber: function(e) { 
+      console.log(e.detail.errMsg) 
+      console.log(e.detail.iv) 
+      console.log(e.detail.encryptedData) 
+    } ,
+  
     clickHandle (msg, ev) {
       console.log('clickHandle:', msg, ev)
     }
@@ -109,7 +125,7 @@ export default {
 
   created () {
     // 调用应用实例的方法获取全局数据
-    this.getUserInfo()
+    //this.getUserInfo()
   }
 }
 </script>

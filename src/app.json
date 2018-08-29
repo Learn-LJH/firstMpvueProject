@@ -3,7 +3,10 @@
     "pages/index/main",
     "pages/logs/main",
     "pages/counter/main",
-    "pages/resume/main"
+    "pages/resume/main",
+    "pages/projects/main",
+    "pages/skill/main",
+    "pages/evaluate/main"
   ],
   "window": {
     "backgroundTextStyle": "light",
