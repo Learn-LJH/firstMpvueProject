@@ -6,7 +6,8 @@
     "pages/resume/main",
     "pages/projects/main",
     "pages/skill/main",
-    "pages/evaluate/main"
+    "pages/evaluate/main",
+    "pages/download/main"
   ],
   "window": {
     "backgroundTextStyle": "light",

@@ -20,43 +20,21 @@
         </div>
       </div>
     </div>
-<button open-type="getUserInfo" @click="getUserInfo">11</button> 
-<button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber"> 22</button> 
+
+    <button open-type="getUserInfo" @click="getUserInfo">load</button> 
+
     <div class="page" style="margin-top:50px;">
-      <!-- <div class="weui-footer">
-        <div class="weui-footer__text">Copyright © 2008-2018 weui.io</div>
-      </div>
-
-      <div class="weui-footer">
-        <div class="weui-footer__links">
-          <navigator url="" class="weui-footer__link">底部链接</navigator>
-        </div>
-        <div class="weui-footer__text">Copyright © 2008-2018 weui.io</div>
-      </div>
-
-      <div class="weui-footer">
-        <div class="weui-footer__links">
-          <navigator url="" class="weui-footer__link">底部链接</navigator>
-          <navigator url="" class="weui-footer__link">底部链接</navigator>
-        </div>
-        <div class="weui-footer__text">Copyright © 2008-2018 weui.io</div>
-      </div> -->
-
       <div class="weui-footer weui-footer_fixed-bottom">
         <div class="weui-footer__links">
-          <navigator url="/pages/counter/main" class="weui-footer__link">WeUI首页</navigator>
+          <navigator url="/pages/counter/main" class="weui-footer__link">lijiahong首页</navigator>
         </div>
-        <div class="weui-footer__text">Copyright © 2008-2018 weui.io</div>
+        <div class="weui-footer__text">Copyright © 2014-2018 lijiahong.io</div>
       </div>
     </div>
 
-    <!-- <form class="form-container">
-      <input type="text" class="form-control" v-model="motto" placeholder="v-model" />
-      <input type="text" class="form-control" v-model.lazy="motto" placeholder="v-model.lazy" />
-    </form>
-    <a href="/pages/counter/main" class="counter">去往Vuex示例页面</a> 
+    <!-- <a href="/pages/counter/main" class="counter">去往Vuex示例页面</a> 
     <a href="/pages/resume/main" class="counter">test</a>-->  
-    
+
   </div>
 </template>
 
@@ -66,11 +44,10 @@ import card from '@/components/card'
 export default {
   data () {
     return {
-      motto: 'Hello World',
       userInfo: {},
       grids: [
         { src: '/static/images/person.jpg', name: '个人信息', url: '/pages/resume/main' },
-        { src: '/static/images/icon_nav_cell.png', name: 'Cell', url: '/pages/resume/main' },
+        { src: '/static/images/download.png', name: 'download', url: '/pages/download/main' },
         { src: '/static/images/icon_nav_toast.png', name: 'Toast', url: '/pages/resume/main' },
         { src: '/static/images/icon_nav_dialog.png', name: 'Dialog', url: '/pages/resume/main' },
         { src: '/static/images/icon_nav_button.png', name: 'Progress', url: '/pages/resume/main' },
@@ -85,12 +62,6 @@ export default {
   components: {
     card
   },
-
-  getPhoneNumber: function(e) { 
-      console.log(e.detail.errMsg) 
-      console.log(e.detail.iv) 
-      console.log(e.detail.encryptedData) 
-    },
 
   methods: {
     bindViewTap () {
@@ -111,12 +82,6 @@ export default {
         }
       })
     },
-
-    getPhoneNumber: function(e) { 
-      console.log(e.detail.errMsg) 
-      console.log(e.detail.iv) 
-      console.log(e.detail.encryptedData) 
-    } ,
   
     clickHandle (msg, ev) {
       console.log('clickHandle:', msg, ev)
@@ -125,7 +90,7 @@ export default {
 
   created () {
     // 调用应用实例的方法获取全局数据
-    //this.getUserInfo()
+    this.getUserInfo()
   }
 }
 </script>
@@ -149,7 +114,7 @@ export default {
 }
 
 .usermotto {
-  margin-top: 50px;
+  margin-top: 30px;
 }
 
 .form-control {
