@@ -29,12 +29,24 @@
 			"list": []
 		},
 		"miniprogram": {
-			"current": 0,
+			"current": 2,
 			"list": [
 				{
 					"id": -1,
 					"name": "download",
-					"pathName": "pages/download/main"
+					"pathName": "pages/download/main",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "32",
+					"pathName": "pages/projects/main",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "32",
+					"pathName": "pages/component/main"
 				}
 			]
 		}

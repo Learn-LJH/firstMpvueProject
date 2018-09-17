@@ -7,7 +7,9 @@
     "pages/projects/main",
     "pages/skill/main",
     "pages/evaluate/main",
-    "pages/download/main"
+    "pages/download/main",
+    "pages/component/main",
+    "pages/comment/main"
   ],
   "window": {
     "backgroundTextStyle": "light",
