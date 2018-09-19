@@ -11,11 +11,11 @@
                 <div class="weui-cell__bd">comment</div>
                 <div class="weui-cell__ft weui-cell__ft_in-access"></div>
             </navigator>
-            <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
-                <div class="weui-cell__bd">video</div>
+            <navigator url="/pages/tencentVideo/main" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+                <div class="weui-cell__bd">tencent video</div>
                 <div class="weui-cell__ft weui-cell__ft_in-access"></div>
             </navigator>
-            <navigator url="" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+            <navigator url="/pages/yuanful/main" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
                 <div class="weui-cell__bd">yuanful-ui</div>
                 <div class="weui-cell__ft weui-cell__ft_in-access"></div>
             </navigator>
@@ -33,7 +33,7 @@
 export default {
     data () {
         return {
-            //icon: '/static/images/icon_nav_button.png'
+            
         }
     },
     methods: {
@@ -56,5 +56,8 @@ export default {
         margin-top: 20rpx;
         color: #888888;
         font-size: 28rpx;
+    }
+    .weui-cell {
+        padding: 30rpx !important;
     }
 </style>

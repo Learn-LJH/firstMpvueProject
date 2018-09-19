@@ -1,0 +1,8 @@
+{
+    "navigationBarTitleText": "tencent video",
+    "component": true,
+    "usingComponents": {
+      "vide":"plugin://tencentvideo/video"
+    }
+  }
+  

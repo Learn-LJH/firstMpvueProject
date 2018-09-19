@@ -1,0 +1,9 @@
+{
+    "navigationBarTitleText": "yuanFul-ui",
+    "component": true,
+    "usingComponents": {
+      "ico": "plugin://yuanful/ico",
+      "loading": "plugin://yuanful/loading"
+    }
+  }
+  

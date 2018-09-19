@@ -1,5 +1,6 @@
 {
     "navigationBarTitleText": "comment",
+    "component": true,
     "usingComponents": {
       "wxcomment": "/static/comment/component/WxComment/WxComment"
     }

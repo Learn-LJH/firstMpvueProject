@@ -202,23 +202,24 @@ export default {
 
         async downloadImg() {
             let _this = this;
-            let res = await saveImageToPhotosAlbum(_this.last_path);
-            console.info(res);
-            // if (saveRes.errMsg === 'saveImageToPhotosAlbum:ok') {
-            //     wx.showToast({
-            //         duration: 3000,
-            //         icon: 'none',
-            //         title: '保存图片成功！',
-            //         mask: true
-            //     });
-            // } else {
-            //     wx.showToast({
-            //         duration: 3000,
-            //         icon: 'none',
-            //         title: '保存图片失败，请重试！',
-            //         mask: true
-            //     });
-            // }
+            console.info(1221);
+            //let res = await 
+            saveImageToPhotosAlbum(_this.last_path).then(function(res) {
+                wx.showToast({
+                    duration: 3000,
+                    icon: 'none',
+                    title: '保存图片成功！',
+                    mask: true
+                });
+            }).catch(function(res) {
+                console.info(res);
+                wx.showToast({
+                    duration: 3000,
+                    icon: 'none',
+                    title: '保存图片失败，请重试！',
+                    mask: true
+                });
+            })
         }
     }
 }
