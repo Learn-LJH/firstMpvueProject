@@ -5,7 +5,6 @@
             <div class='index-desc'>这是一套可添加到小程序内直接使用的功能插件，无需重复开发，为用户提供更丰富的服务。</div>
         </div>
 
-        
         <div class="weui-cells__title">loading</div>
         <div class="weui-cells weui-cells_after-title" style="height:40px;">
             <loading type="default"/>
@@ -23,6 +22,16 @@
             <ico theme="deep-blue" icon="link" size="50rpx" />
             <ico theme="deep-blue" icon="select" size="50rpx" />
         </div>
+
+        <div class="weui-cells__title">accordion</div>
+        <div class="weui-cells weui-cells_after-title" style="text-align:center;">
+            <accordion theme="deep-blue" :option="option" @change="onChange">
+                <view slot="accordion0">内容1</view>
+                <view slot="accordion1">内容2</view>
+                <view slot="accordion2">内容3</view>
+            </accordion>
+        </div>
+        
     </div>
 </template>
 
@@ -31,11 +40,20 @@
 export default {
     data () {
         return {
-            
+            option: [
+                '标题1',
+                '标题22',
+                '标题333',
+            ]
         }
     },
-    methods: {
 
+    methods: {
+        onChange(e) {
+            let detail = e.detail;
+
+            console.log(e);
+        }
     }
 }
 

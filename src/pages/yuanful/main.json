@@ -3,7 +3,9 @@
     "component": true,
     "usingComponents": {
       "ico": "plugin://yuanful/ico",
-      "loading": "plugin://yuanful/loading"
+      "loading": "plugin://yuanful/loading",
+      "calendar": "plugin://yuanful/calendar",
+      "accordion": "plugin://yuanful/accordion"
     }
   }
   

@@ -11,7 +11,8 @@
     "pages/component/main",
     "pages/comment/main",
     "pages/tencentVideo/main",
-    "pages/yuanful/main"
+    "pages/yuanful/main",
+    "pages/icon/main"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -27,6 +28,10 @@
     "yuanful": {
       "version": "1.0.3",
       "provider": "wx2ca7a9c0f8d4e2b9"
+    },
+    "myicon": {
+      "version": "1.0.0",
+      "provider": "wx0a3a3dc8953ae613"
     }
   }
 }

@@ -50,7 +50,7 @@ export default {
         { src: '/static/images/download.png', name: 'download', url: '/pages/download/main' },
         { src: '/static/images/component.jpg', name: 'component', url: '/pages/component/main' },
         { src: '/static/images/icon_nav_dialog.png', name: 'Dialog', url: '/pages/resume/main' },
-        { src: '/static/images/icon_nav_button.png', name: 'Progress', url: '/pages/resume/main' },
+        { src: '/static/images/icon_nav_panel.png', name: 'Progress', url: '/pages/resume/main' },
         { src: '/static/images/icon_nav_panel.png', name: 'Msg', url: '/pages/resume/main' },
         { src: '/static/images/icon_nav_article.png', name: 'Article', url: '/pages/resume/main' },
         { src: '/static/images/icon_nav_actionSheet.png', name: 'ActionSheet', url: '/pages/resume/main' },
